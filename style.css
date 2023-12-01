@@ -1,0 +1,381 @@
+body{
+    background-color: #8CC461;
+    ;
+}
+.score{
+    display: flex;
+    
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    width: 780px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 200px;
+    
+    font-family: 'Roboto';font-size: 37px;
+    
+    
+    
+}
+#te{
+    row-gap: 0;
+    color: white;
+    margin-top: -40px;
+    padding: 10px;
+}
+#comp_score{
+    color: #656565;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 220px;
+    margin-right: -200px;
+    column-gap: 0;  
+    gap: 0;
+    font-size: 17px;
+    width: 150px;
+}
+#comp1{
+    text-align: center;
+    margin-top: 1px;
+}
+#computerScore{
+    align-items: center;
+    color: #252525;
+    text-align: center;
+    font-size: 70px;
+    margin-top: -15px;
+}
+#userScore{
+    align-items: center;
+    color: #252525;
+    text-align: center;
+    font-size: 70px;
+    margin-top: -15px;
+}
+#comp3{
+    text-align: center;
+    margin-top: 1px;
+}
+.pick_container{
+    display: flex;
+    margin-left: 400px;
+    margin-top: 50px;
+    gap: 150px;
+    height: 120px;
+    z-index: 6;
+}
+#group3{
+    display: flex;
+    margin-left: -400px;
+    margin-top: 180px;
+    height: 120px;
+    z-index: 5;
+}
+#sign1{
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 165px;
+    top: 160px;
+    z-index: 6;
+}
+#sign2{
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 20px;
+    top: 160px;
+    z-index: 6;
+}
+#sign3{
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 310px;
+    top: 160px;
+    z-index: 6;
+}
+#line1{
+    border: 10px solid #000000A3;
+    height: 0;
+    width: 160px;
+    left: 50%;
+    margin-left: 500px;
+    margin-top: -70px;
+}   
+#line2{
+   
+    border: 10px solid #000000A3;
+    rotate: -60deg;
+    width: 105px;
+    margin-top: 70px;
+    margin-left: 605px;
+    z-index: 4;
+}
+#line3{
+    border: 10px solid #000000A3;
+    rotate: 60deg;
+    width: 130px;
+    margin-top: -10px;
+    margin-left: 458px;
+    z-index: 4;
+}
+#game_rule{
+    display: flex;
+    flex-direction: column;
+    border: 10px;
+    margin-top: -210px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    background: linear-gradient(0deg, #004429, #004429),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    ;
+    color: white;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Roboto';
+}
+#game1{
+    text-align: center;
+    font-size: 25px;
+}
+#game2{
+    font-size: 16px;
+    margin-top: -20px;
+}
+/* #cancel{
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    width: 30px;
+    margin-top: -210px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    background-color: red;
+    float: right;
+    margin-right: -340px;
+    margin-top: -220px;
+}
+#cancel1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    width: 30px;
+    background-color: red;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: red;
+   
+    
+} */
+#cancel {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px; /* Set the height to match the width for a circular shape */
+    margin-top: -220px;
+    border-radius: 50%; /* Make it a full circle */
+    border: 5px solid white; /* Add a solid white border */
+    background-color: red;
+    float: right;
+    margin-right: -340px;
+}
+
+#cancel1 {
+    display: flex;
+    font-family: 'Dangrek';font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    width: 30px;
+    height: 30px; /* Set the height to match the width for a circular shape */
+    background-color: red;
+    border-radius: 50%; /* Make it a full circle */
+    border: 5px solid red; /* Add a solid red border */
+    
+    
+}
+#pick_text{
+    display: flex;
+    font-family: 'Roboto';font-size: 22px;
+    color: white;
+    gap: 40%;
+    margin-left: 220px;
+    margin-top: 40px;
+}
+#win_text{
+    display: flex;
+    font-family: 'Roboto';font-size: 35px;
+    color: white;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+#play_again{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 40%;
+    width: 140px;
+    height: 25px;
+    font-family: 'Roboto';font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    height: 12%;
+    border-color: white;
+}
+.main_cont{
+    margin-left: -15px;
+}
+.main_cont1{
+    margin-left: -18px;
+    margin-top: -15px;
+}
+.main_cont2{
+    margin-top: -17px;
+}
+.win_container{
+    display: flex;
+    margin-left: 200px;
+    margin-top: -160px;
+    gap: 35%;
+}
+#win1{
+   display: flex;
+   border: 50%;
+   border-radius: 50%;
+   box-shadow:0 0 0 30px rgb(57, 203, 57) inset,0 0 0 10px rgb(24, 187, 24),0 0 0 25px rgb(65, 190, 65),0 0 0 40px rgb(117, 190, 117);
+
+   /* background: radial-gradient(circle at 100%, green
+   , rgb(21, 155, 21) 50%, green 75%, green 75%); */
+   /* background: radial-gradient(closest-side, green
+   , rgb(21, 155, 21) 50%, green 75%, green 75%); */
+   background: repeating-radial-gradient(green
+    , rgb(21, 155, 21) 50%, green 75%, green 75% );
+}
+#win4{
+    display: flex;
+    
+    border: 50%;
+    width: 50%;
+    
+    border-radius: 50%;
+    background: radial-gradient(circle at 100%, green
+    , rgb(21, 155, 21) 50%, green 75%, green 75%);
+    /* background: radial-gradient(closest-side
+    , rgb(69, 206, 69) 80%); */
+    background: repeating-radial-gradient(green
+    , rgb(21, 155, 21) 50%, green 75%, green 75% 50px);
+ }
+
+#win_i{
+    display: flex;
+    margin-top: -120px;
+    margin-left: 780px
+    
+}
+#win_ij{
+    display: flex;
+    margin-top: -60px;
+    margin-left: 260px
+    
+}
+#rule{
+    display: flex;
+    position: fixed;
+    background-color: #8CC461;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    float: right;
+    margin-top: 120px;
+    padding: 10px;
+    position: fixed;
+    margin-left: 1100px;
+    width: 100px;
+    height: 35px;
+    font-family: 'Roboto';font-size: 22px;
+    padding: 4px;
+}
+#next_b{
+    display: flex;
+    position: fixed;
+    background-color: #8CC461;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    float: right;
+    margin-top: 120px;
+    padding: 10px;
+    position: fixed;
+    margin-left: 950px;
+    width: 100px;
+    height: 35px;
+    font-family: 'Roboto';font-size: 22px;
+    padding: 4px;
+}
+#cup{
+    display: flex;
+    width: 15%;
+    margin-left: 46%;
+    margin-top: -15%;
+}
+#cup_m{
+    display: flex;
+    width: 35%;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+#hur{
+    font-family: 'Roboto';
+    font-size: 80px;
+    color: white;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+#hur1{
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: white;
+    margin-left: 40%;
+    margin-top: -8%;
+}
+#hur3{
+    margin-left: -10%;
+    margin-top: 4%;
+    margin-bottom: -10%;
+}
+#play_{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 47%;
+    width: 140px;
+    height: 25px;
+    font-family: 'Roboto';font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    height: 12%;
+    border-color: white;
+}

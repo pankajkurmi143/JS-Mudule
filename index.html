@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="score">
+        <ul id="te">
+            <p>ROCK
+            <br>PAPER
+            <br>SCISSORS</p>
+        </ul>
+        <div id="comp_score">
+            <p id="comp1">COMPUTER
+            <br>SCORE
+            </p>
+            <p id="computerScore"></p>
+        </div>
+        <div id="comp_score">
+            <p id="comp3">YOUR
+                <br>SCORE
+            </p>
+            <p id="userScore"></p>
+        </div>
+    </div>
+    <div class="pick_container">
+        <img id="group2" src="./img/Group 2.png" alt="" onclick="makeChoice('rock')">
+        <img id="group1" src="./img/Group 3.png" alt="" onclick="makeChoice('paper')"> 
+        <img id="group3" src="./img/Group 1.png" alt="" onclick="makeChoice('scissors')"><img id ="sign1" src="./img/icons8-hand-64 1.png" alt="" onclick="makeChoice('scissors')">
+    
+        <img id="sign2" src="./img/icons8-fist-67 1.png" alt="" onclick="makeChoice('rock')">
+        <img id="sign3" src="./img/17911 1.png" alt="" onclick="makeChoice('paper')">
+     
+    </div>
+    <div id="line1">
+        
+    </div>
+    <div id="line2"></div>
+    <div id="line3"></div>
+    <div id="game_rule" style="display:none;">
+          <p id="game1">Game Rules</p>
+          <br>
+          <ul id="game2">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+          </ul>
+    </div>
+    <div id="cancel" style="display:none;">
+        <button id="cancel1" onclick="hideGameRules()">X</button>
+    </div>
+    
+    <button id="rule" onclick="toggleGameRules()">RULES</button>
+    <script src="text.js"></script>
+</body>
+</html>
